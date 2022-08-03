@@ -1,0 +1,59 @@
+.author {
+    background-image: url('../img/author.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 400px;
+
+    h1 {
+        font-size: 2rem;
+        color: $--color-grey-dark;
+        margin: 0;
+        
+
+        &:nth-of-type(1) {
+            animation: fadeInRight 1s ease-in-out;
+        }
+
+        &:nth-of-type(2) {
+            animation: fadeInRight 2.5s ease-in-out;
+        }
+    }
+
+    h4 {
+        font-size: 1rem;
+        color: $--color-grey-dark;
+        margin: 0;
+        animation: fadeInRight 2s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .author {
+        justify-content: flex-end;
+        margin-top: 6.25rem;
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    to {
+      opacity: 1;
+    }
+  }

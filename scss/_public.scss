@@ -1,0 +1,141 @@
+.public {
+    padding: 3.25rem 0;
+
+    .public-block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    a {
+        text-decoration: none;
+        color: $--color-grey;
+        line-height: 1;
+        opacity: 0;
+
+        &:hover {
+            color: $--color-grey-dark;
+        }
+
+        &:nth-child(1) {
+            font-size: 15vw;
+        }
+
+        &:nth-child(2) {
+            font-size: 18vw;
+        }
+
+        &:nth-child(3) {
+            font-size: 37vw;
+        }
+
+        &:nth-child(4) {
+            font-size: 20vw;
+        }
+
+        &:nth-child(5) {
+            font-size: 13.9vw;
+        }
+
+        &:nth-child(6) {
+            font-size: 28.5vw;
+        }
+    }
+
+    &.fade-in {
+        a {
+            &:nth-child(1) {
+               animation: fadeIn 1s forwards;
+               animation-delay: 1.5s;
+            }
+
+            &:nth-child(2) {
+                animation: fadeIn 1s forwards;
+                animation-delay: 0.5s;
+            }
+
+            &:nth-child(3) {
+                animation: fadeIn 1s forwards;
+                animation-delay: 1s;
+            }
+
+            &:nth-child(4) {
+                animation: fadeIn 1s forwards;
+                animation-delay: 3s;
+            }
+
+            &:nth-child(5) {
+                animation: fadeIn 1s forwards;
+                animation-delay: 2.5s;
+            }
+
+            &:nth-child(6) {
+                animation: fadeIn 1s forwards;
+                animation-delay: 2s;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .public {
+        .public-block {
+            justify-content: space-between;
+        }
+
+        a {
+            
+            &:nth-child(1),
+            &:nth-child(2) {
+                font-size: 3.7rem;
+            }
+
+            &:nth-child(3),
+            &:nth-child(4) {
+                font-size: 5.8rem;
+            }
+
+            &:nth-child(5),
+            &:nth-child(6) {
+                font-size: 4.3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .public {
+        a {
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                font-size: 3.9rem;
+            }
+
+            &:nth-child(3),
+            &:nth-child(4) {
+                font-size: 6.15rem;
+            }
+
+            &:nth-child(5),
+            &:nth-child(6) {
+                font-size: 4.5rem;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

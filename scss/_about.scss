@@ -1,0 +1,29 @@
+.about {
+    background-color: $--color-white;
+    border-radius: 3.125rem;
+    padding: 1.125rem 2.25rem;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        gap: 10px 20px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 0;
+        color: $--color-grey;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $--color-grey;
+    }
+
+    li {
+        font-size: 1rem;
+        color: $--color-grey;
+    }
+}

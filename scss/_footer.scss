@@ -1,0 +1,17 @@
+.footer {
+    background-color: $--color-grey-dark;
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 200px;
+
+    }
+
+    h3 {
+        color: $--color-white;
+        margin: 0.313rem 0;
+    }
+}

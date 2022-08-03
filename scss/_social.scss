@@ -1,0 +1,46 @@
+.social {
+    background-color: $--color-white;
+    margin-bottom: 1.875rem;
+    
+    .social-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .icon {
+            width: 20%;
+
+            &-block {
+                padding: 1rem;
+            }       
+
+            img {
+                 width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .social {
+        .social-block {       
+            .icon {
+                &-block {
+                    padding: 2rem;
+                }  
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .social {
+        .social-block {       
+            .icon {
+                &-block {
+                    padding: 3rem;
+                }  
+            }
+        }
+    }
+}
